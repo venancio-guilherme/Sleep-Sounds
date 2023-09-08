@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:venari_app/models/constants/colors.dart';
 import 'package:venari_app/views/login_page/components/custom_text_field.dart';
+import 'package:venari_app/views/login_page/components/snackBar_loginPage.dart';
 import 'package:venari_app/views/login_page/login_page.dart';
 
 class FormLogin extends StatefulWidget {
@@ -32,9 +33,7 @@ class _FormLoginState extends State<FormLogin> {
               controller: controller,
               validator: (text) {
                 if (text == null || text.isEmpty) {
-                  return 'Preencha seu nome';
-                } else if (text != 'admin') {
-                  return 'usuário incorreto';
+                  return 'O nome precisa ser preenchido';
                 } else {
                   return null;
                 }
@@ -51,8 +50,6 @@ class _FormLoginState extends State<FormLogin> {
               validator: (pass) {
                 if (pass == null || pass.isEmpty) {
                   return 'A senha precisa ser preenchida';
-                } else if (pass != 'senha') {
-                  return 'senha incorreta';
                 } else {
                   return null;
                 }
@@ -63,8 +60,15 @@ class _FormLoginState extends State<FormLogin> {
             ),
             ElevatedButton(
               onPressed: () {
-                if (formKey.currentState!.validate()) {
+                String user = controller.value.text;
+                String pass = controllePassword.value.text;
+                bool isValidate = formKey.currentState!.validate();
+
+                if (isValidate && user == 'admin' && pass == 'senha') {
                   Navigator.of(context).pushNamed('HomePage');
+                } else if ((user.isNotEmpty && pass.isNotEmpty) &&
+                    (user != 'admin' || pass.isNotEmpty != 'senha')) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBarLogin());
                 }
               },
               child: Text('Login'),
