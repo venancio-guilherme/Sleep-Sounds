@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:venari_app/models/constants/colors.dart';
+import 'package:venari_app/models/constants/constants.dart';
 import 'package:venari_app/views/login_page/components/custom_text_field.dart';
 import 'package:venari_app/views/login_page/components/snackBar_loginPage.dart';
 import 'package:venari_app/views/login_page/login_page.dart';

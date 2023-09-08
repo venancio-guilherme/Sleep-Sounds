@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:venari_app/models/constants/colors.dart';
 import 'package:venari_app/models/constants/constants.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -28,21 +27,21 @@ class CustomTextField extends StatelessWidget {
         controller: controller,
         validator: validator,
         decoration: InputDecoration(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderSide: BorderSide(
+              color: kCorCauda,
             ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              borderSide: BorderSide(
-                color: kCorCauda,
-              ),
-            ),
-            labelStyle: kLabelStyle,
-            floatingLabelStyle: kFloatingLabelStyle,
-            labelText: label,
-            icon: Icon(icone),
-            iconColor: kCorCauda,
-            hintStyle: TextStyle(color: Colors.white)),
+          ),
+          labelStyle: kLabelStyle,
+          floatingLabelStyle: kFloatingLabelStyle,
+          labelText: label,
+          icon: Icon(icone),
+          iconColor: kCorCauda,
+        ),
       ),
     );
   }

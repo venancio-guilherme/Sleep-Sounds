@@ -5,7 +5,6 @@ import 'package:venari_app/views/login_page/login_page.dart';
 import 'package:venari_app/views/on_boarding_page/start_page_1.dart';
 import 'package:venari_app/views/on_boarding_page/start_page_2.dart';
 import 'package:venari_app/views/on_boarding_page/start_page_3.dart';
-import '../../models/constants/colors.dart';
 import '../../models/constants/constants.dart';
 
 class OnBoardingPage extends StatefulWidget {

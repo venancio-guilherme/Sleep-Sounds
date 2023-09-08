@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:venari_app/models/constants/constants.dart';
+import 'package:venari_app/views/HomePage/components/categorias.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,10 +9,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kPageColor,
       appBar: AppBar(
-        title: const Text('HOME PAGE'),
+        title: Text(
+          'Sleep',
+          style: GoogleFonts.nunito(fontWeight: FontWeight.w900, fontSize: 28),
+        ),
+        automaticallyImplyLeading: false,
+        elevation: 0,
+        backgroundColor: kPageColor,
       ),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [Categorias()],
+        ),
+      ),
     );
   }
 }

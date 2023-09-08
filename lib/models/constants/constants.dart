@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
-import 'colors.dart';
-
 const kTitleTextStyle = TextStyle(
   fontFamily: 'Nunito',
   fontSize: 42.0,
@@ -39,9 +37,21 @@ const kDotsDecorator = const DotsDecorator(
 
 const kLabelStyle = TextStyle(
   fontFamily: 'Nunito',
+  fontWeight: FontWeight.bold,
   color: Colors.white,
 );
 const kFloatingLabelStyle = TextStyle(
     color: Color.fromARGB(249, 255, 157, 65),
     fontFamily: 'Nunito',
     fontWeight: FontWeight.w300);
+const kDefaultPadding = 20.0;
+
+const kTextColor = Color(0xFF535353);
+const kTextLightColor = Color(0xFFACACAC);
+
+const kPageColor = Color(0XFF21283F);
+
+const kCorCauda = Color.fromARGB(249, 255, 157, 65);
+
+const kIsSelected = Color(0XFF4870FF);
+const kIsNotSelected = Color(0XFF141927);
