@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:venari_app/views/home_page.dart';
-import 'package:venari_app/views/start_page_1.dart';
-import 'package:venari_app/views/start_page_2.dart';
-import 'package:venari_app/views/start_page_3.dart';
-import '../models/constants/colors.dart';
-import '../models/constants/constants.dart';
+import 'package:venari_app/views/login_page/login_page.dart';
+import 'package:venari_app/views/on_boarding_page/start_page_1.dart';
+import 'package:venari_app/views/on_boarding_page/start_page_2.dart';
+import 'package:venari_app/views/on_boarding_page/start_page_3.dart';
+import '../../models/constants/colors.dart';
+import '../../models/constants/constants.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const HomePage()),
+      MaterialPageRoute(builder: (_) => const LoginPage()),
     );
   }
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import '../models/constants/constants.dart';
+import '../../models/constants/constants.dart';
 
 Widget _buildImage(String assetName, [double width = 700]) {
   return Image.asset(

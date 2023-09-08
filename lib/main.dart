@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:venari_app/views/on_boarding_page.dart';
+import 'package:venari_app/views/HomePage/home_page.dart';
+import 'package:venari_app/views/on_boarding_page/on_boarding_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const OnBoardingPage(),
+      routes: {
+        '/': ((context) => OnBoardingPage()),
+        'HomePage': ((context) => HomePage()),
+      },
     );
   }
 }
