@@ -15,12 +15,6 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0XFF21283F),
-        appBar: AppBar(
-          backgroundColor: Color(0XFF21283F),
-          automaticallyImplyLeading: false,
-          centerTitle: true,
-          title: const Text('LOGIN PAGE'),
-        ),
         body: Center(
             child: FormLogin(
           formKey: formKey,
