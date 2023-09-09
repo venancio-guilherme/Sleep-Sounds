@@ -47,12 +47,12 @@ const kFloatingLabelStyle = TextStyle(
     fontWeight: FontWeight.w300);
 const kDefaultPadding = 20.0;
 
-const kPageColor = Color(0XFF21283F);
+const kPageColor = Color(0XFF141927);
 
 const kCorCauda = Color.fromARGB(249, 255, 157, 65);
 
 const kIsSelected = Color(0XFF4870FF);
-const kIsNotSelected = Color(0XFF141927);
+const kIsNotSelected = Color(0XFF21283F);
 
 const kCategoryTextStyle = TextStyle(
   fontFamily: 'Nunito',
