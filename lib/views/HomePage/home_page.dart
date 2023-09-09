@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Sleep',
-          style: GoogleFonts.nunito(fontWeight: FontWeight.w900, fontSize: 28),
+          style: styleTitlePage,
         ),
         automaticallyImplyLeading: false,
         elevation: 0,

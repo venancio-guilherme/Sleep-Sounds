@@ -62,3 +62,6 @@ const kCategoryTextStyle = TextStyle(
 
 var descriptionTextStyle = GoogleFonts.nunito(
     fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white);
+
+TextStyle styleTitlePage =
+    GoogleFonts.nunito(fontWeight: FontWeight.w900, fontSize: 28);

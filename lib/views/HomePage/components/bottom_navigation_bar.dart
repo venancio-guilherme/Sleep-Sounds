@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:venari_app/models/constants/constants.dart';
 import 'package:venari_app/models/pages.dart';
-import 'package:venari_app/views/login_page/login_page.dart';
 
 class HomePageBottomNavigationBar extends StatefulWidget {
   const HomePageBottomNavigationBar({
