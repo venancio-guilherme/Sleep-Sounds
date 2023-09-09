@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 const kTitleTextStyle = TextStyle(
@@ -46,12 +47,18 @@ const kFloatingLabelStyle = TextStyle(
     fontWeight: FontWeight.w300);
 const kDefaultPadding = 20.0;
 
-const kTextColor = Color(0xFF535353);
-const kTextLightColor = Color(0xFFACACAC);
-
 const kPageColor = Color(0XFF21283F);
 
 const kCorCauda = Color.fromARGB(249, 255, 157, 65);
 
 const kIsSelected = Color(0XFF4870FF);
 const kIsNotSelected = Color(0XFF141927);
+
+const kCategoryTextStyle = TextStyle(
+  fontFamily: 'Nunito',
+  fontSize: 15.0,
+  color: Color.fromARGB(255, 188, 196, 204),
+);
+
+var descriptionTextStyle = GoogleFonts.nunito(
+    fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white);
